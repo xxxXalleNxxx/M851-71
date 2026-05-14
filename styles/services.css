@@ -1,0 +1,988 @@
+body {
+    background-color: #f8f5f0;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(26, 26, 26, 0.95);
+    padding: 15px 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #8b7355;
+    width: 90%;
+    max-width: 1400px;
+    border-radius: 0 0 20px 20px;
+    min-height: 70px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-scrolled {
+    padding: 10px 40px;
+    min-height: 60px;
+    width: 85%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    filter: brightness(1.1);
+}
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.menu-link:hover,
+.menu-link.active {
+    background: #8b7355;
+    color: #ffffff;
+    border-color: #8b7355;
+    box-shadow: 0 6px 20px rgba(139, 115, 85, 0.4);
+    transform: translateY(-2px);
+}
+
+.main-services {
+    flex: 1;
+    margin-top: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.services-hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services-hero h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #d4c8b5;
+    font-weight: 400;
+}
+
+.pricing-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.pricing-card {
+    background: #f8f5f0;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e8e2d9;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card.featured {
+    border-color: #8b7355;
+    background: linear-gradient(135deg, #f8f5f0 0%, #fff8f0 100%);
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e8e2d9;
+    padding-bottom: 20px;
+}
+
+.card-header h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #8b7355;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.services-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e8e2d9;
+    font-size: 16px;
+    color: #4a4a4a;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.services-list li:last-child {
+    border-bottom: none;
+}
+
+.order-btn {
+    width: 100%;
+    background: #8b7355;
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.order-btn:hover {
+    background: #6d5a41;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 115, 85, 0.3);
+}
+
+.features-section {
+    padding: 80px 0;
+    background: #f8f5f0;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    color: #1a1a1a;
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.feature {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.feature h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+footer {
+    background: #1a1a1a;
+    color: #d4c8b5;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer span {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+}
+/* Стили для модального окна с формой */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    position: relative;
+    border: 2px solid #8b7355;
+}
+
+.close {
+    color: #8b7355;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #6d5a41;
+}
+
+.modal-content h3 {
+    color: #1a1a1a;
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.modal-subtitle {
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+/* Стили формы */
+.contact-form {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e8e2d9;
+    border-radius: 8px;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #f8f5f0;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8b7355;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.1);
+}
+
+.submit-btn {
+    width: 100%;
+    background: #8b7355;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+    background: #6d5a41;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 115, 85, 0.3);
+}
+
+.modal-contacts {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #e8e2d9;
+}
+
+.modal-contacts p {
+    margin: 8px 0;
+    color: #4a4a4a;
+}
+
+.modal-contacts a {
+    color: #8b7355;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.modal-contacts a:hover {
+    color: #6d5a41;
+}
+/* Стили для успешного уведомления */
+.success-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 3000;
+    transform: translateX(400px);
+    transition: transform 0.3s ease;
+    max-width: 400px;
+}
+
+.success-toast.show {
+    transform: translateX(0);
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toast-icon {
+    font-size: 20px;
+}
+
+.toast-message {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Адаптивность для toast */
+@media (max-width: 768px) {
+    .success-toast {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        max-width: none;
+        transform: translateY(-100px);
+    }
+    
+    .success-toast.show {
+        transform: translateY(0);
+    }
+}
+
+/* Адаптивность для модального окна */
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 5% auto;
+        padding: 30px 25px;
+        width: 95%;
+    }
+    
+    .modal-content h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 25px 20px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+}
+
+/* ========== ИСПРАВЛЕННЫЕ МЕДИА-ЗАПРОСЫ ========== */
+
+@media (min-width: 1200px) {
+    .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav {
+        padding: 15px 40px;
+        width: 92%;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+    
+    .pricing-card {
+        padding: 35px 25px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+    
+    .card-header h3 {
+        font-size: 26px;
+    }
+    
+    .price {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .nav {
+        padding: 12px 25px;
+        width: 95%;
+        min-height: 65px;
+        flex-direction: row;
+        gap: 15px;
+    }
+    
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .menu-link {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+    
+    .main-services {
+        margin-top: 100px;
+    }
+    
+    .services-hero h1 {
+        font-size: 40px;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .pricing-card {
+        padding: 30px 25px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .features-section h2 {
+        font-size: 34px;
+    }
+    
+    .feature {
+        padding: 35px 25px;
+    }
+}
+
+/* ИСПРАВЛЯЕМ ОСНОВНУЮ ПРОБЛЕМУ - 576-767px */
+@media (min-width: 576px) and (max-width: 767px) {
+    .nav {
+        padding: 10px 15px;
+        width: 96%;
+        min-height: 60px;
+        flex-direction: column;
+        gap: 8px;
+        border-radius: 0 0 15px 15px;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .logo-img {
+        height: 45px;
+    }
+    
+    .menu {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .menu-link {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+    
+    .main-services {
+        margin-top: 100px;
+    }
+    
+    .services-hero {
+        padding: 50px 0;
+    }
+    
+    .services-hero h1 {
+        font-size: 32px;
+    }
+    
+    .subtitle {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    
+    .pricing-section {
+        padding: 50px 0;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 100%;
+        margin: 40px auto 0;
+        padding: 0 10px;
+    }
+    
+    .pricing-card {
+        padding: 25px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .features-section {
+        padding: 50px 0;
+    }
+    
+    .features-section h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    
+    .feature {
+        padding: 25px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        padding: 0 15px;
+        max-width: 100%;
+    }
+    
+    /* Важно! Убираем горизонтальный скролл */
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+/* ИСПРАВЛЯЕМ ПРОБЛЕМУ 460-575px */
+@media (min-width: 460px) and (max-width: 575px) {
+    .nav {
+        padding: 8px 12px;
+        width: 98%;
+        min-height: 55px;
+        flex-direction: column;
+        gap: 6px;
+        border-radius: 0 0 12px 12px;
+    }
+    
+    .logo-img {
+        height: 40px;
+    }
+    
+    .menu {
+        gap: 6px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .menu-link {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    
+    .main-services {
+        margin-top: 90px;
+    }
+    
+    .services-hero {
+        padding: 40px 15px;
+    }
+    
+    .services-hero h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    
+    .subtitle {
+        font-size: 16px;
+        line-height: 1.4;
+        padding: 0 5px;
+    }
+    
+    .pricing-section {
+        padding: 40px 0;
+    }
+    
+    .pricing-grid {
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
+    .pricing-card {
+        padding: 20px 15px;
+        min-width: 0; /* Важно! */
+    }
+    
+    .card-header h3 {
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+    
+    .price {
+        font-size: 24px;
+    }
+    
+    .services-list li {
+        font-size: 14px;
+        padding: 8px 0;
+        word-wrap: break-word;
+    }
+    
+    .features-section {
+        padding: 40px 0;
+    }
+    
+    .features-section h2 {
+        font-size: 24px;
+        padding: 0 15px;
+    }
+    
+    .feature {
+        padding: 20px 15px;
+        margin: 0 15px;
+    }
+    
+    .feature h4 {
+        font-size: 18px;
+        word-wrap: break-word;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+}
+
+/* ИСПРАВЛЯЕМ ПРОБЛЕМУ 420-459px */
+@media (max-width: 459px) {
+    .nav {
+        padding: 6px 10px;
+        width: 99%;
+        min-height: auto;
+        flex-direction: column;
+        gap: 5px;
+        border-radius: 0 0 10px 10px;
+    }
+    
+    .logo-img {
+        height: 35px;
+    }
+    
+    .menu {
+        gap: 4px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .menu-link {
+        font-size: 9px;
+        padding: 4px 8px;
+        white-space: nowrap; /* Не переносим текст */
+    }
+    
+    .main-services {
+        margin-top: 80px;
+    }
+    
+    .services-hero {
+        padding: 30px 10px;
+    }
+    
+    .services-hero h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .subtitle {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+    
+    .pricing-section {
+        padding: 30px 0;
+    }
+    
+    .pricing-grid {
+        gap: 12px;
+        padding: 0 10px;
+    }
+    
+    .pricing-card {
+        padding: 15px 12px;
+        margin: 0;
+        min-width: 0;
+        overflow: hidden; /* Скрываем переполнение */
+    }
+    
+    .card-header h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        word-break: break-word;
+    }
+    
+    .price {
+        font-size: 20px;
+    }
+    
+    .services-list li {
+        font-size: 12px;
+        padding: 6px 0;
+        word-break: break-word;
+    }
+    
+    .order-btn {
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    .features-section {
+        padding: 30px 0;
+    }
+    
+    .features-section h2 {
+        font-size: 20px;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    
+    .features-grid {
+        gap: 12px;
+        padding: 0 10px;
+    }
+    
+    .feature {
+        padding: 15px 12px;
+        margin: 0;
+        min-width: 0;
+    }
+    
+    .feature-icon {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .feature h4 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .feature p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+    
+    .container {
+        padding: 0 8px;
+        max-width: 100%;
+    }
+    
+    /* КРИТИЧЕСКИ ВАЖНО для мобильных */
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+    .container, 
+    .pricing-grid, 
+    .features-grid,
+    .services-hero,
+    .pricing-section,
+    .features-section {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Дополнительные исправления для очень маленьких экранов */
+@media (max-width: 374px) {
+    .menu-link {
+        font-size: 8px;
+        padding: 3px 6px;
+    }
+    
+    .services-hero h1 {
+        font-size: 22px;
+    }
+    
+    .subtitle {
+        font-size: 13px;
+    }
+    
+    .pricing-card {
+        padding: 12px 10px;
+    }
+    
+    .card-header h3 {
+        font-size: 16px;
+    }
+    
+    .price {
+        font-size: 18px;
+    }
+}
+
+/* Общие стили для мобильных */
+@media (max-width: 767px) {
+    html, body {
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Убираем горизонтальные отступы */
+    .pricing-grid,
+    .features-grid {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    /* Все элементы должны быть не шире экрана */
+    .pricing-card,
+    .feature,
+    .services-hero h1,
+    .services-hero .subtitle {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}

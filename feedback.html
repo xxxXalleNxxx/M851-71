@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - ЭКОКРАМ</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/feedStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a class="logo" href="index.html">
+                    <img class="logo-img" src="image/1583610-1722.webp" alt="Логотип ЭКОКРАМ">
+                </a> 
+
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a class="menu-link" href="index.html#Uslugi">Наши работы</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="index.html#contacts">Контакты</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="services.html">Услуги и цены</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link active" href="feedback.html">О нас</a>
+                    </li>
+                
+                </ul>
+            </nav>
+        </div>      
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <h3>О НАС</h3>
+                       
+                        <p>Находимcя на 973 километре трассы М7, занимаемся ремонтом любых видов автомобилей </p>
+                        <p>Так же занимаемся легковой и грузовой эвакуацией. Грузовой эвакуатор <a href="https://trucksreview.ru/kraz/kraz-255-tehnicheskie-harakteristiki.html">КРАЗ</a>, оснащённый манипулятором и лебёдкой, справится с любой ситуацией</p>
+                        <p>Материал можете посмотреть <a href="#video">ТУТ</a>. Больше материала в моей странице <a href="https://vk.com/video/@id409682990">ВКонтакте</a></p>
+                        <p>Имеется охраняемая стоянка, гостиница с чистым и свежим постельным бельём, в кафе всегда свежие блюда и выпечка!</p>
+                        <p>По всем вопросам обращаться по телефону: <a href="tel:79600802222">+7 960 080-22-22</a></p>
+                </div>
+            </div>
+        </section>
+
+       <section class="video-section">
+    <div class="container">
+        <a name="video"></a>
+        <h2 class="vid">Кадры с места работы</h2>
+        <div class="video-container">
+            <iframe src="https://vk.com/video_ext.php?oid=409682990&id=456239021&hash=807e6fb5af7aebf6" allowfullscreen></iframe>
+            <iframe src="https://vk.com/video_ext.php?oid=409682990&id=456239019&hash=fa2de62d8173161d" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+        <section id="reviews">
+            <div class="container">
+                <div class="row centered">
+                    <h3>ОТЗЫВЫ НАШИХ ПОСЕТИТЕЛЕЙ</h3>
+                    
+                    <script src="https://res.smartwidgets.ru/app.js" defer></script>
+                    <div class="sw-app" data-app="8501140510faa34374b7eae933b90966"></div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <span>Copyright © 2025 Arapov</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script>
+window.addEventListener('scroll', function() {
+    const nav = document.querySelector('.nav');
+    const scrollY = window.scrollY;
+    
+    if (scrollY > 100) {
+        nav.classList.add('nav-scrolled');
+    } else {
+        nav.classList.remove('nav-scrolled');
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId) || document.querySelector(`[name="${targetId}"]`);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>

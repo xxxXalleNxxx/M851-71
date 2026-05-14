@@ -1,0 +1,1259 @@
+* {
+    box-sizing: border-box !important;
+}
+
+.container-2,
+.contact-forms,
+.contact-forms > * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 767px) {
+    .container-2 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        width: 100% !important;
+    }
+    
+    .contact-forms {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        width: 100% !important;
+    }
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: border-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+a{
+    text-decoration:none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+a:hover{
+    color: #8b7355;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.logo{
+    margin: 10px 0 0 20px;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    filter: brightness(1.1);
+}
+
+.logo-clicked .logo-img {
+    transform: scale(0.9);
+    transition: transform 0.2s ease;
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.05);
+}
+
+body{
+    background-color: #f8f5f0;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #2c2c2c;
+}
+
+.header {
+    background: url('C:\Users\arapo\Desktop\ArapovWebsite\image\black-road-texture_1160-806.avif') center/cover;
+    min-height: 300px;
+    position: relative;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.container{
+    background-color: #1a1a1a; 
+    min-height: 1080px;
+    max-width: 100%;
+    margin: 0;
+    padding-top: 240px;
+    position: relative;
+    width: 100%;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(116, 112, 106, 0.1);
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(26, 26, 26, 0.95);
+    padding: 15px 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #8b7355;
+    width: 90%;
+    max-width: 1400px;
+    border-radius: 0 0 20px 20px;
+    min-height: 70px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    flex-wrap: wrap; /* Добавлено */
+    gap: 15px; /* Добавлено */
+}
+
+.nav-scrolled {
+    padding: 10px 40px;
+    min-height: 60px;
+    width: 85%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.nav-scrolled .logo-img {
+    height: 40px;
+}
+
+.nav-scrolled .button-dop {
+    height: 40px;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.nav-scrolled .menu-link {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.hero {
+    background: #ffffff;
+    min-height: 100vh;
+    margin-top: 80px; 
+    position: relative;
+    background-image: url('image/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Добавлено */
+    justify-content: center; /* Добавлено */
+}
+
+.menu-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.menu-link:hover,
+.menu-link.active {
+    background: #8b7355;
+    color: #ffffff;
+    border-color: #8b7355;
+    box-shadow: 0 6px 20px rgba(139, 115, 85, 0.4);
+    transform: translateY(-2px);
+}
+
+.button-dop:hover {
+    background: #6d5a41;
+    border-color: #6d5a41;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(139, 115, 85, 0.6);
+}
+
+.button-dop {
+    background: #8b7355;
+    color: #ffffff;
+    border: 2px solid #8b7355;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 115, 85, 0.3);
+}
+
+.text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+    text-align: center;
+}
+
+.ploshadki{
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 128px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.textp{
+    font-size: 45px;
+    font-family: "Raleway", sans-serif;
+    color: #d4c8b5; 
+    font-weight: 400;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    line-height: 1.4;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.main{
+    background-color: #f8f5f0;
+    max-width: 1712px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 235px;
+    color: #2c2c2c;
+}
+
+.container-2{
+    margin-bottom: 200px;
+    background: #ffffff;
+    padding: 60px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e8e2d9;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.uslugi{
+    text-align: center;
+    font-size: 70px;
+    color: #1a1a1a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding: 50px 0 90px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.uslugi::after {
+    content: '';
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: #8b7355;
+}
+
+.body2 {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.gallery-image {
+    width: 600px;
+    height: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e8e2d9;
+}
+
+.gallery-image.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.contacts{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.contact-inner{
+    display: flex;
+    background-color: transparent;
+    gap: 40px;
+    align-items: flex-start;
+}
+.contact-forms{
+    margin-top: 60px;
+    width: 100%;
+    padding: 0 10px 0 50px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e8e2d9;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Убеждаемся, что внутренние элементы не превышают ширину */
+.contact-forms > * {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-title{
+    font-family: "Montserrat",sans-serif;
+    font-size: 36px;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    position: relative;
+}
+
+.contact-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #8b7355;
+}
+
+.whatsapp-container{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.point{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding: 0;
+}
+.icon{
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    filter: brightness(0.8);
+}
+
+.WhatsApp{
+    font-size: 24px;
+    color: #4a4a4a;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif; 
+    letter-spacing: 0.5px; 
+    white-space: nowrap; 
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.point .WhatsApp {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+.grafik-2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    margin-top: 50px;
+    color: #1a1a1a;
+    font-weight: 400;
+}
+
+.grafik{
+    padding: 20px 0;
+    font-size: 22px;
+    color: #4a4a4a;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.grafik p {
+    margin: 10px 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif; 
+    letter-spacing: 0.5px;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.grafik p:nth-child(1),
+.grafik p:nth-child(2) {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.map {
+    width: 100%;
+    height: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e8e2d9;
+    margin-top: 20px;
+    position: relative;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.map iframe,
+.map script {
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+    position: relative !important;
+    z-index: 1;
+}
+
+.under {
+    background: #1a1a1a;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.container-under {
+    min-height: 30px;
+    padding: 30px 15px;  
+    font-size: 22px;  
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.menu-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+.und {
+    color: #d4c8b5;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.und:hover {
+    color: #8b7355;
+}
+
+footer {
+    background: #1a1a1a;
+    color: #d4c8b5;
+    text-align: center;
+    padding: 30px 20px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #d4c8b5;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    display: inline-block;
+    padding: 5px 0;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+footer a:hover {
+    color: #8b7355;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav {
+        padding: 15px 40px;
+        width: 92%;
+    }
+    
+    .gallery-image {
+        width: 550px;
+    }
+    
+    .ploshadki {
+        font-size: 110px;
+    }
+    
+    .textp {
+        font-size: 40px;
+    }
+    
+    .uslugi {
+        font-size: 65px;
+    }
+    
+    .contact-title {
+        font-size: 34px;
+    }
+    
+    .map {
+        height: 500px;
+    }
+}
+
+/* ОБНОВЛЕННЫЙ ЗАПРОС ДЛЯ 768-991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .nav {
+        padding: 12px 25px;
+        width: 95%;
+        min-height: 65px;
+        flex-direction: row;
+    }
+    .container-2 {
+        padding: 50px 30px; /* Уменьшаем padding */
+        margin-bottom: 150px;
+    }
+    
+    .contact-forms {
+        padding: 30px;
+        margin-top: 40px;
+    }
+    
+    .menu {
+        gap: 15px;
+    }
+    
+    .menu-link {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+    
+    .button-dop {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .gallery-image {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .ploshadki {
+        font-size: 80px;
+    }
+    
+    .textp {
+        font-size: 32px;
+    }
+    
+    .uslugi {
+        font-size: 52px;
+    }
+    
+    .contact-inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .contact-forms {
+        padding: 30px;
+        margin-top: 0;
+    }
+    
+    .map {
+        width: 100%;
+        height: 450px;
+        margin-top: 30px;
+    }
+    
+    .contact-title {
+        font-size: 30px;
+    }
+    
+    .WhatsApp {
+        font-size: 22px;
+    }
+}
+
+/* НОВЫЙ ЗАПРОС ДЛЯ 576-767px */
+@media (min-width: 576px) and (max-width: 767px) {
+    .nav {
+        padding: 10px 20px;
+        width: 96%;
+        min-height: 60px;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 0 0 15px 15px;
+    }
+    
+    .logo {
+        margin: 5px 0;
+    }
+    
+    .logo-img {
+        height: 45px;
+    }
+    
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .menu-link {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+    
+    .button-dop {
+        padding: 8px 18px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    
+    .gallery-image {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .ploshadki {
+        font-size: 65px;
+        margin-top: 20px;
+    }
+    
+    .textp {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+    
+    .container {
+        padding-top: 200px;
+    }
+    
+    .text {
+        min-height: 600px;
+    }
+    
+    .uslugi {
+        font-size: 44px;
+        padding: 40px 0 70px;
+    }
+    
+    .contact-title {
+        font-size: 26px;
+    }
+    
+    .WhatsApp {
+        font-size: 20px;
+    }
+    
+    .grafik-2 {
+        font-size: 24px;
+    }
+    
+    .grafik {
+        font-size: 18px;
+    }
+    
+    .container-2 {
+        padding: 40px 20px !important; /* Приоритет */
+        margin-bottom: 100px;
+        width: calc(100% - 20px); /* Учитываем внешние отступы */
+        margin-left: auto;
+        margin-right: auto;
+    }
+     .contact-forms {
+        padding: 25px 20px;
+        margin-top: 30px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* ОСНОВНОЕ ИСПРАВЛЕНИЕ ДЛЯ КАРТЫ */
+    .map {
+        height: 400px;
+        width: calc(100% - 40px);
+        margin: 20px auto 0;
+        max-width: 100%;
+    }
+    
+    .contact-inner {
+        flex-direction: column;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+}
+
+/* ИСПРАВЛЕННЫЙ ЗАПРОС ДЛЯ 460-575px */
+@media (min-width: 460px) and (max-width: 575px) {
+    .nav {
+        padding: 8px 15px;
+        width: 97%;
+        min-height: 55px;
+        flex-direction: column;
+        gap: 8px;
+        border-radius: 0 0 12px 12px;
+    }
+    
+    .logo {
+        margin: 5px 0;
+    }
+    
+    .logo-img {
+        height: 40px;
+    }
+    
+    .menu {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .menu-link {
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+    
+    .button-dop {
+        padding: 7px 16px;
+        font-size: 11px;
+        margin-top: 5px;
+    }
+    
+    .ploshadki {
+        font-size: 55px;
+        margin-top: 15px;
+    }
+    
+    .textp {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+    
+    .container {
+        padding-top: 180px;
+    }
+    
+    .text {
+        min-height: 500px;
+    }
+    
+    .uslugi {
+        font-size: 38px;
+        padding: 30px 0 50px;
+    }
+    
+    .contact-forms {
+        padding: 25px 20px;
+        max-width: 100%;
+    }
+    
+    .contact-title {
+        font-size: 24px;
+    }
+    
+    .WhatsApp {
+        font-size: 18px;
+    }
+    
+    .grafik-2 {
+        font-size: 22px;
+    }
+    
+    .grafik {
+        font-size: 16px;
+    }
+    
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .container-2 {
+        padding: 30px 15px !important;
+        margin-bottom: 80px;
+        width: calc(100% - 16px);
+    }
+     .contact-forms {
+        padding: 20px 15px;
+        margin-top: 25px;
+    }
+    
+    /* ОСНОВНОЕ ИСПРАВЛЕНИЕ ДЛЯ КАРТЫ */
+    .map {
+        height: 350px;
+        width: calc(100% - 30px);
+        margin: 20px auto 0;
+        border-radius: 10px;
+    }
+    
+    .contact-inner {
+        padding: 0 15px;
+        gap: 30px;
+    }
+}
+
+/* Дополнительные исправления для очень маленьких экранов */
+@media (max-width: 459px) {
+    .nav {
+        padding: 6px 10px;
+        width: 98%;
+        min-height: auto;
+        flex-direction: column;
+        gap: 6px;
+        border-radius: 0 0 10px 10px;
+    }
+    
+    .logo {
+        margin: 5px 0;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .logo-img {
+        height: 35px;
+    }
+    
+    .menu {
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .menu-link {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+    
+    .button-dop {
+        padding: 6px 14px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    
+    .ploshadki {
+        font-size: 48px;
+        margin-top: 10px;
+    }
+    
+    .textp {
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+    
+    .container {
+        padding-top: 150px;
+    }
+    
+    .text {
+        min-height: 400px;
+    }
+    
+    .uslugi {
+        font-size: 32px;
+        padding: 20px 0 40px;
+    }
+    
+    .gallery-image {
+        width: 100%;
+    }
+    
+    .contact-forms {
+        padding: 20px 15px;
+        max-width: 100%;
+    }
+    
+    .contact-title {
+        font-size: 20px;
+    }
+    
+    .WhatsApp {
+        font-size: 16px;
+    }
+    
+    .grafik-2 {
+        font-size: 20px;
+    }
+    
+    .grafik {
+        font-size: 14px;
+    }
+    
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+    
+     .container-2 {
+        padding: 25px 10px !important;
+        margin-bottom: 60px;
+        width: calc(100% - 12px);
+        border-radius: 8px;
+    }
+    
+    .contact-forms {
+        padding: 18px 12px;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+    
+    .container-under {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+    
+    footer {
+        padding: 20px 10px;
+    }
+    
+    footer a {
+        font-size: 14px;
+    }
+    
+    /* КРИТИЧЕСКИ ВАЖНО ДЛЯ КАРТЫ */
+    .map {
+        height: 300px;
+        width: calc(100% - 20px);
+        margin: 15px auto 0;
+        border-radius: 8px;
+    }
+    
+    .contact-inner {
+        flex-direction: column;
+        padding: 0 10px;
+        gap: 20px;
+    }
+    
+    /* Убеждаемся, что карта не выходит за пределы */
+    .map-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+/* Дополнительный запрос для очень маленьких экранов */
+@media (max-width: 374px) {
+    .map {
+        height: 250px;
+        width: calc(100% - 16px);
+        margin: 10px auto 0;
+    }
+    
+    .contact-forms {
+        padding: 15px 12px;
+        margin-top: 15px;
+
+    }
+    
+    .contact-title {
+        font-size: 18px;
+    }
+    
+    .WhatsApp {
+        font-size: 14px;
+    }
+    .container-2 {
+        padding: 20px 8px !important;
+        margin-bottom: 50px;
+        width: calc(100% - 10px);
+    }
+}
+
+/* Для навигации при скролле */
+@media (max-width: 991px) {
+    .nav-scrolled {
+        padding: 6px 15px;
+        min-height: auto;
+    }
+    
+    .nav-scrolled .logo-img {
+        height: 35px;
+    }
+    
+    .nav-scrolled .menu-link {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+    
+    .nav-scrolled .button-dop {
+        padding: 6px 14px;
+        font-size: 11px;
+    }
+}
+
+/* Дополнительные исправления для всех разрешений */
+@media (max-width: 767px) {
+    /* Важно: ограничиваем ширину контента */
+    .main {
+        max-width: 100%;
+        overflow-x: hidden;
+        padding: 0;
+    }
+    
+    .container-2 {
+        width: calc(100% - 20px);
+        margin: 0 auto 60px;
+        box-sizing: border-box;
+    }
+    
+    /* Убеждаемся, что iframe карты не переполняет */
+    iframe[src*="yandex"],
+    div[class*="yandex"] {
+        max-width: 100% !important;
+        transform-origin: 0 0 !important;
+    }
+}
